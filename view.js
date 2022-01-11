@@ -6,10 +6,13 @@ class View {
   }
 
   addParagraph() {
-    let p = document.createElement("p")
-    p = "This paragraph has been dynamically added by JavaScript!"
-    this.mainContainerEl.append(p)
+    let p = document.createElement("p");
+    p.innerText = "This paragraph has been dynamically added by JavaScript!";
+    this.mainContainerEl.append(p);
   }
 }
 
 module.exports = View;
+
+// const view = new View()
+// console.log(view.addParagraph())

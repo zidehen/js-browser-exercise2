@@ -13,7 +13,7 @@
         }
         addParagraph() {
           let p = document.createElement("p");
-          p = "This paragraph has been dynamically added by JavaScript!";
+          p.innerText = "This paragraph has been dynamically added by JavaScript!";
           this.mainContainerEl.append(p);
         }
       };
